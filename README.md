@@ -16,6 +16,12 @@ mvn clean install -DskipTests
 - install NPM dependencies:
 
 ```shell
+npm install
+```
+
+- start the app:
+
+```shell
 mvn jetty:run
 ```
 
