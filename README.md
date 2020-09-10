@@ -1,27 +1,24 @@
-# ActiveWeb simple example
+# ActiveWeb simple example using Tailwind CSS framework
 
-Follow these simple steps to run this app:
+## Building assets
 
+- run `npm run build` to generate `main.css` file in `../webapp/css/` folder.
+- for **production** run the same script but passing the `NODE_ENV=production` to purge unused CSS.
 
-* AdjustJDBC connection parameters in [database.properties](src/main/resources/database.properties)
+## Run the application
 
-* Run the below command to create two empty databases (for development and test)
+- install java dependencies:
 
-```
-mvn db-migrator:create
-```
-* Run the migration(s):
-
-```
-mvn db-migrator:migrate
+```shell
+mvn clean install -DskipTests
 ```
 
-* Run the application
+- install NPM dependencies:
 
-```
+```shell
 mvn jetty:run
 ```
 
-* Navigate with browser
+- navigate with browser
 
     to: [http://localhost:8080/](http://localhost:8080/)
