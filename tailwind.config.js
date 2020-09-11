@@ -1,6 +1,6 @@
 module.exports = {
   purge: [
-    './src/main/webapp/WEB-INF/views/**/*.ftl'
+    './src/**/*.ftl'
   ],
   theme: {
     extend: {},

@@ -3,7 +3,11 @@
 ## Building assets
 
 - run `npm run build` to generate `main.css` file in `../webapp/css/` folder.
-- for **production** run the same script but passing the `NODE_ENV=production` to purge unused CSS.
+- for **production** run the same script but passing the `NODE_ENV=production` to purge unused CSS:
+
+```shell
+NODE_ENV=production npm run build
+```
 
 ## Run the application
 
